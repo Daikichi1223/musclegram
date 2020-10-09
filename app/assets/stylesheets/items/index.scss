@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+
+/* メイン部分 */
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.side-contents {
+  width: 20vw;
+}
+
+.side-bar-menu {
+}
+
+.search-form {
+  height: 5vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.search-form>.input-box {
+  width: 17vw;
+  height: 5vh;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.search-btn {
+  width: 4vh;
+  height: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #f5439c;
+  padding: 6px;
+}
+
+.search-icon {
+  width: 100%;
+}
+
+.side-bar-links {
+  align-items: center;
+  font-size: 2vw;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.side-bar-link {
+  margin-bottom: 30px;
+}
+
+.btn--pink,
+a.btn--pink {
+  color: #fff;
+  background-color: #f5439c;
+  padding: 1vh;
+  font-size: 2vw;
+}
+.btn--pink:hover,
+a.btn--pink:hover {
+  color: #fff;
+  background: black;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.posts-contens {
+  background-color: aqua;
+  width: 80vw;
+}
+
+/* //メイン部分 */
