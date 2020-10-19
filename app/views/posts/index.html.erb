@@ -65,15 +65,15 @@
           <%= image_tag "item-sample.png", class: "post-img" %>
         </div>
         <div class='post-info'>
-          <h3 class='post-title'>
-            <%= "タイトル" %>
+          <h3 class='post-content'>
+            <%= "投稿内容" %>
           </h3>
-          <div class='post-content'>
-            <span><%= "投稿内容" %></span>
-            <div class='good-btn'>
-              <%= image_tag "good-btn.png", class:"good-icon" %>
-              <span class='good-count'>0</span>
-            </div>
+          <div class='post-tag'>
+            <p><%= "タグ" %></p>
+          </div>
+          <div class='good-btn'>
+            <%= image_tag "good-btn.png", class:"good-icon" %>
+            <span class='good-count'>0</span>
           </div>
         </div>
         <% end %>
