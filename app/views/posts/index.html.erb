@@ -1,0 +1,86 @@
+<%= render "shared/header" %>
+
+<div class='top-main'>
+  <%# Musclegramの帯部分 %>
+  <div class='top-main-upper'>
+    <p class='top-main-title'>
+      筋肉は最高のファッション！？
+    </p>
+    <h2 class='top-main-subtitle'>
+      〜筋トレで人生を変えたい人が集まる写真投稿アプリ〜
+    </h2>
+  </div>
+  <%# /Musclegramの帯部分 %>
+
+  <%# Musclegramでできる3つのことの部分 %>
+  <div class='top-main-explain'>
+    <h2 class='title'>
+      Musclegramで楽しめる3種類の機能
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= image_tag "musclegram-reason01.png", class:"list-pict" %>
+        <span class='reason-list-number'>1</span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>トレーニング</span>
+            の検索
+        </h3>
+        <p class='reason-list-description'>
+          トレーニングメニューや食事メニューが簡単に検索できる
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "musclegram-reason02.png", class:"list-pict" %>
+        <span class='reason-list-number'>2</span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>体重・食事</span>
+            の記録
+        </h3>
+        <p class='reason-list-description'>
+          日々の進化が目に見えて分かる！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "musclegram-reason03.png", class:"list-pict" %>
+        <span class='reason-list-number'>3</span>
+        <h3 class='reason-list-text'>
+          トレーニー同士の
+          <span class='reason-list-blue-text'>交流</span>
+        </h3>
+        <p class='reason-list-description'>
+          同じ志を持つ人と交流ができるのでモチベーションが落ちない！
+        </p>
+      </li>
+    </ul>
+  </div>
+  <%# /Musclegramでできる3つのことの部分 %>
+
+  <%# 投稿一覧 %>
+  <div class='post-contents'>
+    <h2 class='title'>新規投稿一覧</h2>
+    <ul class='post-lists'>
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='post-img-content'>
+          <%= image_tag "item-sample.png", class: "post-img" %>
+        </div>
+        <div class='post-info'>
+          <h3 class='post-content'>
+            <%= "投稿内容" %>
+          </h3>
+          <div class='post-tag'>
+            <p><%= "タグ" %></p>
+          </div>
+          <div class='good-btn'>
+            <%= image_tag "good-btn.png", class:"good-icon" %>
+            <span class='good-count'>0</span>
+          </div>
+        </div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+  <%# /投稿一覧 %>
+</div>
+
+<%= render "shared/footer" %>

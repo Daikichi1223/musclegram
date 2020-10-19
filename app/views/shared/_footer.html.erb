@@ -1,0 +1,46 @@
+<%# 下部広告部分 %>
+<div class='ad-footer-contents'>
+  <p class='ad-footer-explain'>
+    誰でも簡単、筋トレ好きと繋がれる写真投稿アプリ
+  </p>
+  <h2 class='ad-footer-title'>
+    今すぐ無料ダウンロード！
+  </h2>
+  <div class='store-btn'>
+    <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+    <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+  </div>
+</div>
+<%# /下部広告部分 %>
+
+<div class='footer'>
+  <div class='footer-contents'>
+    <div class='musclegram-details'>
+      <h2 class='footer-content-head'>Musclegramについて</h2>
+      <ul>
+        <li><%= link_to '会社概要（運営会社)', "#", class: "footer-link" %></li>
+        <li><%= link_to 'プライバシーポリシー', "#", class: "footer-link" %></li>
+        <li><%= link_to 'Musclegram利用規約', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='musclegram-details'>
+      <h2 class='footer-content-head'>筋トレについて知る</h2>
+      <ul>
+        <li><%= link_to 'ジム一覧', "#", class: "footer-link" %></li>
+        <li><%= link_to 'トレーニングメニュー一覧', "#", class: "footer-link" %></li>
+        <li><%= link_to '食事メニュー一覧', "#", class: "footer-link" %></li>
+        <li><%= link_to 'サプリメント一覧', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='musclegram-details'>
+      <h2 class='footer-content-head'>Musclegramについて</h2>
+      <ul>
+        <li><%= link_to 'Musclegramガイド', "#", class: "footer-link" %></li>
+        <li><%= link_to 'Musclegramロゴ利用ガイドライン', "#", class: "footer-link" %></li>
+        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+  </div>
+  <%= link_to image_tag("musclegram_logo.png", class: "musclegram-logo"), "#" %>
+  <p>© Musclegram</p>
+</div>
