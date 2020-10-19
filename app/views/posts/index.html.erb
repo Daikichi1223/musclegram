@@ -4,18 +4,18 @@
   <%# Musclegramの帯部分 %>
   <div class='top-main-upper'>
     <p class='top-main-title'>
-      筋トレは最高のファッション！？
+      筋肉は最高のファッション！？
     </p>
     <h2 class='top-main-subtitle'>
       〜筋トレで人生を変えたい人が集まる写真投稿アプリ〜
     </h2>
-  <%# /Musclegramの帯部分 %>
   </div>
+  <%# /Musclegramの帯部分 %>
 
   <%# Musclegramでできる3つのことの部分 %>
   <div class='top-main-explain'>
-  <h2 class='title'>
-      musclegramで楽しめる3つのコンテンツ
+    <h2 class='title'>
+      Musclegramで楽しめる3種類の機能
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
@@ -23,7 +23,7 @@
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'>トレーニング</span>
-          の検索
+            の検索
         </h3>
         <p class='reason-list-description'>
           トレーニングメニューや食事メニューが簡単に検索できる
@@ -34,7 +34,7 @@
         <span class='reason-list-number'>2</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'>体重・食事</span>
-          の記録
+            の記録
         </h3>
         <p class='reason-list-description'>
           日々の進化が目に見えて分かる！
@@ -54,6 +54,33 @@
     </ul>
   </div>
   <%# /Musclegramでできる3つのことの部分 %>
+
+  <%# 投稿一覧 %>
+  <div class='post-contents'>
+    <h2 class='title'>新規投稿一覧</h2>
+    <ul class='post-lists'>
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='post-img-content'>
+          <%= image_tag "item-sample.png", class: "post-img" %>
+        </div>
+        <div class='post-info'>
+          <h3 class='post-title'>
+            <%= "タイトル" %>
+          </h3>
+          <div class='post-content'>
+            <span><%= "投稿内容" %></span>
+            <div class='good-btn'>
+              <%= image_tag "good-btn.png", class:"good-icon" %>
+              <span class='good-count'>0</span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+  <%# /投稿一覧 %>
 </div>
 
 <%= render "shared/footer" %>
